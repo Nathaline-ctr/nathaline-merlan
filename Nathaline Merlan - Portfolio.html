@@ -1,25 +1,212 @@
 <!DOCTYPE html>
-<!-- saved from url=(0072)file:///C:/Users/vinline/Downloads/Nathaline-Merlan-Portfolio%20(1).html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8
-
+<html lang="en">
+<head>
+  <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Nathaline Merlan - Portfolio_files/style.css">
-    <title>Nathaline Merlan - Portfolio</title>
+    <title>Nathaline's Portfolio</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            border: none;
+            outline: none;
+        }
+        * {
+            scroll-behavior: smooth;
+        }
+        * {
+            font-family: -apple-system, sans-serif;
+        }
+        :root {
+            --bg-color: #000000;
+            --snd-bg-color: #f5f5f5;
+            --text-color: #d0ccf3;
+            --main-color: #ae8af1;
+        }
+
+        html {
+            font-size: 62.5%;
+            overflow-x: hidden;
+        }
+
+        body {
+            background: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        section {
+            min-height: 100vh;
+            padding: 10rem 9% 2rem;
+        }
+
+        /* Header Section Code */
+        .header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2rem 5%;
+            background: var(--main-color);
+            backdrop-filter: blur(10px);
+            transition: all 0.5s ease;
+        }
+
+        .logo {
+            font-size: 3rem;
+            color: var(--bg-color);
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        .navbar a {
+            font-size: 1.9rem;
+            color: var(--bg-color);
+            margin-left: 4rem;
+            font-weight: 700;
+            transition: 0.3s ease;
+        }
+
+        .navbar a:hover,
+        .navbar a.active {
+            color: var(--text-color);
+        }
+
+        #menu-icon {
+            font-size: 3.6rem;
+            color: var(--bg-color);
+            cursor: pointer;
+            display: none;
+        }
+
+        /* Home section Code */
+        .home {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .home-img img {
+            width: 25vw;
+            border-radius: 50%;
+            box-shadow: 0 0 25px var(--main-color);
+            cursor: pointer;
+            animation: floatImage 4s ease-in-out infinite;
+            transition: 0.4s ease;
+        }
+
+        .home-img img:hover {
+            box-shadow: 0 0 25px var(--main-color),
+            0 0 35px var(--main-color),
+            0 0 45px var(--main-color);
+        }
+
+        @keyframes floatImage {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-2.4rem);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .home-content {
+            margin-left: 5rem;
+        }
+
+        .home-content h3 {
+            font-size: 3.7rem;
+            font-weight: 700;
+        }
+
+        .home-content h3:nth-of-type(2) {
+            margin-bottom: 2rem;
+        }
+
+        span {
+            color: var(--main-color);
+        }
+
+        .home-content h1 {
+            font-size: 6rem;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .home-content p {
+            font-size: 1.6rem;
+        }
+
+        .social-media a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 42px;
+            height: 42px;
+            background: transparent;
+            border: 0.2rem solid var(--main-color);
+            border-radius: 50%;
+            font-size: 2rem;
+            color: var(--main-color);
+            margin: 3rem 1.5rem 3rem 0;
+            transition: 0.3s ease;
+        }
+
+        .social-media a:hover {
+            transform: scale(1.2) translateY(-10px);
+            background-color: var(--main-color);
+            color: var(--bg-color);
+            box-sizing: 0 0 25px var(--main-color);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.8rem;
+            background: var(--main-color);
+            border-radius: 4rem;
+            box-shadow: none;
+            font-size: 1.6rem;
+            color: var(--bg-color);
+            letter-spacing: 0.1rem;
+            font-weight: 600;
+            transition: 0.3s ease;
+        }
+
+        .btn:hover {
+            box-shadow: 0 0 1.6rem var(--main-color);
+        }
+    </style>
 </head>
-    <body>
+
+    <title>Nathaline Merlan - Portfolio</title>
         <header class="header">
-            <a href="file:///C:/Users/vinline/Documents/Online%20portfolio/Practical-Exam-in-Computer-Programming/home" class="logo">Nathaline Merlan </a>
+            <a href="home" class="logo">Nathaline Merlan </a>
 
           <!--Header Section Code -->
 
 
-            <i class="bx bx-menu" id="menu-icon"></i>
+            <i class='bx bx-menu' id="menu-icon"></i>
         
             <nav class="#navbar">
-                  <a href="file:///C:/Users/vinline/Documents/Online%20portfolio/Practical-Exam-in-Computer-Programming/Index.html#home">Home</a>
-                 <a href="file:///C:/Users/vinline/Documents/Online%20portfolio/Practical-Exam-in-Computer-Programming/Index.html#about">About</a>
-                 <a href="file:///C:/Users/vinline/Documents/Online%20portfolio/Practical-Exam-in-Computer-Programming/Index.html#Projects">Projects</a>
-                 <a href="file:///C:/Users/vinline/Documents/Online%20portfolio/Practical-Exam-in-Computer-Programming/Index.html#contact">Contact</a>
+                  <a href="#home">Home</a>
+                 <a href="#about">About</a>
+                 <a href="#Projects">Projects</a>
+                 <a href="#contact">Contact</a>
             </nav>
         </header>
 
@@ -27,7 +214,7 @@
 
       <section class="home" id="home">
         <div class="home-img">
-          <img src="./Nathaline Merlan - Portfolio_files/482827047_3993146974302184_8444797862081064188_n.jpg" alt="Profile image">
+          <img src="c:\Users\vinline\Downloads\482827047_3993146974302184_8444797862081064188_n.jpg" alt="Profile image">
         </div>
 
         <div class="home-content">
@@ -35,22 +222,23 @@
           <h1><em><ins> Nathaline C. Merlan</ins></em></h1>
           <h3>Born on<span class="multiple-text"> December 01, 2007</span></h3>
           <h3>Hillsview Royale phase3 blk 20 Lot 63</h3>                 
-          <h3><span>-Assemble and Disassemble<br>-Configure</span></h3>
+          <H3><span>-Assemble and Disassemble<br>-Configure</span></H3>
           <p><em>I've always been curios about how technology works, and i want to learn how to build and create my own programs.<br>The ICT strand seemed like the best way to achieve that.</em></p>
-          <a href="file:///C:/Users/vinline/Documents/Online%20portfolio/Practical-Exam-in-Computer-Programming/Index.html#Projects" class="btn"> <em>09926701073</em></a>
-          <a href="file:///C:/Users/vinline/Documents/Online%20portfolio/Practical-Exam-in-Computer-Programming/Index.html#Projects" class="btn"> <em>Nathalinemerlan@00gmail.com</em></a>
+          <a href="#Projects" class="btn"> <em>09926701073</em></a>
+          <a href="#Projects" class="btn"> <em>Nathalinemerlan@00gmail.com</em></a>
           <div class="social-media">
             <h2><strong> Want to see more? Click the circles below to check out my social media.</strong></h2>
             <a href="https://www.facebook.com/nathaline.481191" target="_blank" style="text-decoration: none;">
-                <i class="facebook-logo"></i>
+                <i class='facebook-logo'></i>
               </a>
-            <a href="https://www.instagram.com/n_thalyyyy/?fbclid=IwY2xjawJDgjxleHRuA2FlbQIxMAABHdMQq4CJoNfJUMU8TyWxHVxWqj-xHhZJaKYTJBDkF-uERLqTK8K9cLbiBA_aem_sfszm1OdoULx9dbVP9z_jA"><i class="bx bxl-Instagram"></i></a>
-            <a href="file:///C:/Users/vinline/Documents/Online%20portfolio/Practical-Exam-in-Computer-Programming/tiktok.com/@lyyyy931"><i class="bx bxl-TIKTOK"></i></a>
+            <a href="https://www.instagram.com/n_thalyyyy/?fbclid=IwY2xjawJDgjxleHRuA2FlbQIxMAABHdMQq4CJoNfJUMU8TyWxHVxWqj-xHhZJaKYTJBDkF-uERLqTK8K9cLbiBA_aem_sfszm1OdoULx9dbVP9z_jA"><i class="bx bxl-Instagram" ></i></a>
+            <a href="tiktok.com/@lyyyy931"><i class='bx bxl-TIKTOK' ></i></a>
           </div>
         </div>          
-      </section>
+      </Section>
+
         <!-- About Section Code -->
-    
-</body>
+    </body>
+
 
 </html>
